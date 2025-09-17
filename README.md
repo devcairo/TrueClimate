@@ -8,7 +8,7 @@ Hello all! My name is Sa'Cairo Bonner and this here is a responsive weather appl
 
 - **Search Functionality**: Enter any city name to get weather data
 - **Current Weather Display**: Shows temperature, weather condition, humidity, wind speed, and more
-- **7-Day Forecast**: Daily forecast cards with high/low temperatures and weather icons
+- **5-Day Forecast**: Daily forecast cards with high/low temperatures and weather icons
 - **API Integration**: Uses OpenWeatherMap API for real-time weather data
 - **Responsive Design**: Mobile-first design that works on all screen sizes
 
