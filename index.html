@@ -1,0 +1,113 @@
+<!--  Author: Sa'Cairo Bonner
+   Create Date: 09/16/2025
+   Class: ITN263
+   Class Section: 601
+   Assignment: Github project
+   Purpose: To create a project of opur choosing and host it on github
+   -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrueClimate Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1><i class="fa-solid fa-cloud-sun-rain"></i> TrueClimate Weather App</h1>
+            <div class="controls">
+                <button id="locationBtn" class="location-btn" title="Use Current Location">
+                    <i class="fa-solid fa-location-dot"></i>
+                </button>
+            </div>
+        </header>
+
+        <!-- API Key Section -->
+        <section id="apiKeySection" class="api-key-section">
+            <div class="api-key-container">
+                <h3><i class="fa-solid fa-key fa-bounce"></i> Setup Required</h3>
+                <p>Enter your OpenWeatherMap API key to get started:</p>
+                <div class="api-input-container">
+                    <input 
+                        type="password" 
+                        id="apiKeyInput" 
+                        placeholder="Enter your API key..." 
+                        class="api-key-input"
+                    >
+                    <button id="saveApiKeyBtn" class="save-api-btn">
+                        <i class="fas fa-save"></i> Save
+                    </button>
+                </div>
+                <div class="api-help">
+                    <p><small>Don't have an API key? <a href="https://home.openweathermap.org/users/sign_up" target="_blank" rel="noopener">Get one free here</a></small></p>
+                    <p><small>Your API key is stored locally in your browser cache and never shared with anyone.</small></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Search Section -->
+        <section id="searchSection" class="search-section hidden">
+            <div class="search-container">
+                <input 
+                    type="text" 
+                    id="cityInput" 
+                    placeholder="Enter city name..." 
+                    class="city-input"
+                >
+                <button id="searchBtn" class="search-btn" title="Search for weather">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div id="errorMessage" class="error-message"></div>
+        </section>
+
+        <!-- Loading Spinner -->
+        <div id="loadingSpinner" class="loading-spinner">
+            <i class="fa-solid fa-snowflake fa-spin"></i>
+            <p>Loading weather forecast...</p>
+        </div>
+
+        <!-- Current Weather Section -->
+        <section id="currentWeather" class="current-weather hidden">
+            <div class="weather-main">
+                <div class="location-info">
+                    <h2 id="cityName">City Name</h2>
+                    <p id="currentDate">Date</p>
+                </div>
+                <div class="weather-icon-container">
+                    <img id="weatherIcon" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48L3N2Zz4=" alt="Weather Icon" class="weather-icon">
+                    <p id="weatherDescription">Weather Description</p>
+                </div>
+                <div class="temperature-info">
+                    <span id="temperature" class="temperature">0°C</span>
+                    <div class="temp-details">
+                        <p>Feels like <span id="feelsLike">0°F</span></p>
+                        <p>Humidity: <span id="humidity">0%</span></p>
+                        <p>Wind: <span id="windSpeed">MPH</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5-Day Forecast Section -->
+        <section id="forecastSection" class="forecast-section hidden">
+            <h3>5-Day Forecast</h3>
+            <div id="forecastContainer" class="forecast-container">
+                <!-- Forecast cards will be dynamically generated -->
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Powered by <a href="https://openweathermap.org/" target="_blank" rel="noopener">OpenWeatherMap</a></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
