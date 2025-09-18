@@ -16,7 +16,6 @@
 /* An attempt to keep page from shifting side to side on mouse movement */
 html {
     overflow-y: scroll; /* Always show vertical scrollbar */
-    scrollbar-gutter: stable; /* Reserve space for scrollbar */
 }
 
 body {
@@ -26,6 +25,7 @@ body {
     background: linear-gradient(135deg, #2d3436 0%, #636e72 100%);
     min-height: 100vh;
     transition: all 0.3s ease;
+    overflow-x: hidden;
 }
 
 /* Container */
