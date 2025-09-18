@@ -39,7 +39,7 @@ Hello all! My name is Sa'Cairo Bonner and this here is a responsive weather appl
 ## Usage
 
 1. **First Time Setup**: Enter your OpenWeatherMap API key when prompted
-2. **Search for Weather**: Enter a city name and click the search button or press Enter
+2. **Search for Weather**: Enter a city name (e.g. Wellington, NZ / Wellington, New Zealand) and click the search button or press Enter
 3. **Use Current Location**: Click the location button to get weather for your current position
 4. **View Forecast**: Scroll down to see the 5-day forecast below the current weather
 
