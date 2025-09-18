@@ -15,7 +15,7 @@ class WeatherApp {
         
         // Constants
         this.DAYS_OF_WEEK = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-        this.FORECAST_DAYS = 7;
+        this.FORECAST_DAYS = 5;
         this.API_KEY_STORAGE_KEY = 'weatherAppApiKey';
         this.LAST_CITY_STORAGE_KEY = 'lastSearchedCity';
         
@@ -231,7 +231,7 @@ class WeatherApp {
         this.showError('Unable to access your location. Please search for a city instead.');
     }
 
-    // Utility method to build API URLs
+    // Utility method to help build API URLs
     buildWeatherUrls(query, isCoords = false) {
         const baseParams = `appid=${this.apiKey}&units=imperial`;
         const queryParam = isCoords ? `lat=${query.lat}&lon=${query.lon}` : `q=${query}`;
@@ -323,7 +323,7 @@ class WeatherApp {
         // Update additional weather details
         this.setElementText('feelsLike', `${Math.round(weather.main.feels_like)}°F`);
         this.setElementText('humidity', `${weather.main.humidity}%`);
-        this.setElementText('windSpeed', `${Math.round(weather.wind.speed * 3.6)} mph`);
+        this.setElementText('windSpeed', `${Math.round(weather.wind.speed * 2.237)} mph`); // Multiplying by 2.237 to convert m/s to mph
         
         // Show current weather section
         this.toggleElementVisibility('currentWeather', true);

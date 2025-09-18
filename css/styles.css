@@ -13,6 +13,12 @@
     box-sizing: border-box;
 }
 
+/* An attempt to keep page from shifting side to side on mouse movement */
+html {
+    overflow-y: scroll; /* Always show vertical scrollbar */
+    scrollbar-gutter: stable; /* Reserve space for scrollbar */
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
@@ -423,7 +429,7 @@ body.fog {
 }
 
 /* Responsive Design */
-@media (min-width: 768px) {
+@media (min-width: 800px) {
     .container {
         padding: 40px;
     }
@@ -446,25 +452,11 @@ body.fog {
     }
     
     .forecast-container {
-        grid-template-columns: repeat(7, 1fr);
+        grid-template-columns: repeat(5, 1fr);
     }
     
     .forecast-card {
         padding: 25px 20px;
-    }
-}
-
-@media (min-width: 1024px) {
-    .container {
-        padding: 60px;
-    }
-    
-    .current-weather {
-        padding: 40px;
-    }
-    
-    .temperature {
-        font-size: 5rem;
     }
 }
 
