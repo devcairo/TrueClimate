@@ -34,14 +34,14 @@ Hello all! My name is Sa'Cairo Bonner and this here is a responsive weather appl
    - When you first open the app, you'll see a setup screen
    - Enter your OpenWeatherMap API key in the input field
    - Click "Save" to store it securely in your browser
-   - Your API key is stored locally and never shared
+   - Your API key is stored locally using the localstorage variable in javascript and thus never shared outside of your browser
 
 ## Usage
 
 1. **First Time Setup**: Enter your OpenWeatherMap API key when prompted
 2. **Search for Weather**: Enter a city name and click the search button or press Enter
 3. **Use Current Location**: Click the location button to get weather for your current position
-4. **View Forecast**: Scroll down to see the 7-day forecast below the current weather
+4. **View Forecast**: Scroll down to see the 5-day forecast below the current weather
 
 ## Security Features
 
@@ -70,10 +70,12 @@ For development and personal use, this should be more than sufficient.
 ## File Structure
 
 ```text
-weather-app/
+TrueClimate/
 ├── index.html          # Main HTML structure
-├── styles.css          # CSS styling and responsive design
-├── script.js           # JavaScript functionality
+├── css/
+│   └── styles.css      # CSS styling and responsive design
+├── js/
+│   └── script.js       # JavaScript functionality
 └── README.md           # This file
 ```
 
