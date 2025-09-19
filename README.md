@@ -1,6 +1,10 @@
-# True Climate Weather Application
+# TrueClimate: Weather Application
 
-Hello all! My name is Sa'Cairo Bonner and this here is a responsive weather application built with HTML, CSS, and JavaScript that provides current weather conditions and a 5-day forecast. I had to come up with a website idea for my classroom project and ultimately fell upon revamping my previous weather app that I created two years prior but sadly consisted of broken URL links, poor structure, & lacklsuter API security.
+Hello all! My name is Sa'Cairo Bonner and this here is a responsive weather application built with HTML, CSS, and JavaScript that provides current weather conditions and a basic 5-day forecast. I had to come up with a website idea for my classroom project and ultimately fell upon revamping my previous weather app that I created two years prior but sadly consisted of broken URL links, poor structure, & lacklsuter API security.
+
+<img width="1913" height="1002" alt="image" src="https://github.com/user-attachments/assets/7bb70215-0ed5-48cc-96c2-ee50185de863" />
+
+##### Above: An image of the weather application when weather data for a city is gathered.
 
 ## Features
 
